@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true" >
+
+    <EditText
+        android:id="@+id/numberInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/memTip"
+        android:ems="10"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:hint="@string/InputHint"
+        android:imeOptions="actionDone"
+        android:inputType="number"
+        android:textSize="18sp" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/memTip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:textAppearance="?android:attr/textAppearance"
+        android:textColor="@color/LightBrown"
+        android:textSize="18sp" />
+    
+    <View
+        android:id="@+id/Line1"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/numberInput"
+        android:background="#000000" />
+
+    <ExpandableListView
+        android:id="@+id/sampleExList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Line1"
+        android:divider="@color/SteelBlue"
+        android:dividerHeight="2dp" >
+
+    </ExpandableListView>
+
+</RelativeLayout>
